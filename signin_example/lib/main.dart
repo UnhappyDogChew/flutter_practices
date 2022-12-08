@@ -190,7 +190,7 @@ class _AnimatedProgressIndicatorState extends State<AnimatedProgressIndicator>
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(
-      animation: _controller,
+      animation: _curveAnimation,
       builder: (context, child) => LinearProgressIndicator(
         value: _curveAnimation.value,
         valueColor: _colorAnimation,
